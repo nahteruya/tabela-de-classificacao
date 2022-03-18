@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+table {
+    border: 2px solid white;
+}
