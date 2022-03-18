@@ -1,9 +1,12 @@
 body {
     margin: 0px;
     background-color: black;
+    color: white;
     font-family: 'Roboto Mono', monospace;
+    text-align: center;
 }
 
 table {
     border: 2px solid white;
+    border-collapse: collapse;
 }
