@@ -39,7 +39,7 @@ function exibirJogadores(listaJogadores) {
         elemento += "<td><button onClick='adicionarEmpate(" + i + ")'>Empate</button></td></tr>";
     }
     var elemementoTabela = document.getElementById("bodyTable");
-    elemementoTabela.innerHTML = elemementoTabela.innerHTML + elemento;
+    elemementoTabela.innerHTML = elemento;
 }
 
 exibirJogadores(listaJogadores);
@@ -47,6 +47,20 @@ exibirJogadores(listaJogadores);
 function adicionarVitoria(i) {
     var jogador = listaJogadores[i];
     jogador.vitorias++;
+    jogador.pontos = calcularPontos(jogador);
+    exibirJogadores(listaJogadores);
+}
+
+function adicionarEmpate(i) {
+    var jogador = listaJogadores[i];
+    jogador.empates++;
+    jogador.pontos = calcularPontos(jogador);
+    exibirJogadores(listaJogadores);
+}
+
+function adicionarDerrota(i) {
+    var jogador = listaJogadores[i];
+    jogador.derrotas++;
     jogador.pontos = calcularPontos(jogador);
     exibirJogadores(listaJogadores);
 }
