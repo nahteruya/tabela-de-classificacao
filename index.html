@@ -15,12 +15,29 @@
         </h1>
     </header>
     <main>
+        <div class="duelo">
+            <div class="jogador1">
+                <p>Escolha o jogador 1:</p>
+                <input list="jogadores" name="jogador1" id="jogador1">
+                <datalist id="jogadores">
+                </datalist>
+                <button onClick="adicionarVitoriaJogador1()">Vitória</button>
+            </div>
+            <div class="jogador2">
+                <p>Escolha o jogador 2:</p>
+                <input list="jogadores" name="jogador2" id="jogador2">
+                <datalist id="jogadores">
+                </datalist>
+                <button onClick="adicionarVitoriaJogador2()">Vitória</button>
+            </div>
+        </div>
+        <button onClick="adicionarEmpate()">Empate</button>
         <div class="adicionarJogador">
             <p>Adicione mais um jogador:</p>
             <input type="text" name="nome" id="nomeJogador">
             <button onClick="adicionarJogador()">Adicionar jogador</button>
         </div>
-        <table style="width: 100%;">
+        <table style="width: 95%;">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -35,8 +52,7 @@
                
             </tbody>
         </table>
-        
-        
+        <button onClick="zerarPontuacao()">Zerar pontuação</button>        
     </main>
     <script src="./script.js"></script>
 </body>

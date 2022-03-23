@@ -18,3 +18,11 @@ td {
   border: solid 1px white;
   color: white;
 }
+
+.duelo {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
